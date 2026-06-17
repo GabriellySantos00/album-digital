@@ -20,3 +20,7 @@ Projeto desenvolvido com HTML, CSS e JavaScript com o objetivo de criar uma expe
 ## Objetivo
 
 Este projeto foi criado para explorar a criação de experiências digitais mais emocionais e imersivas, combinando elementos visuais, áudio e interatividade.
+
+## Acesse o projeto
+
+🔗[ /memorias-digitais.netlify.app/](https://memorias-digitais.netlify.app)
