@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IYEIMSF Vol.1</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
+<text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='52'>🤍</text>
+</svg>">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="lock">
+
+  <button id="btn-musica" class="btn-musica" onclick="toggleMusica()">
+    <i class="fa-solid fa-volume-high"></i>
+  </button>
+
+  <div class="fundo-fixo"></div>
+
+  <div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <section class="home" id="landing">
+
+    <header class="header">
+      <h3 class="tituloh3">
+        <span class="coracao">🤍</span>
+        1 ANO DE NÓS
+      </h3>
+    </header>
+
+    <div class="conteudo">
+      <h1 class="titulo2">Nossa história</h1>
+      <p class="nomes">Capítulo I</p>
+      <button class="desbloquear" id="btn-desbloquear" onclick="desbloquear()">Desbloquear Memória</button>
+    </div>
+
+  </section>
+
+  <div class="transicao">
+    <p>Alguns momentos viraram lembrança…</p>
+  </div>
+
+  <section id="gallery" class="galeria">
+    <div class="intro-text">
+      <h3 class="titulo1">Eu lembro de cada detalhe...</h3>
+      <p class="par1">Um pouco do que que não coube no papel.</p>
+    </div>
+
+    <div class="carousel">
+      <div class="indicadores"></div>
+
+
+      <div class="card left" onclick="trocarCard(this)">
+        <video src="videos/comidinha.mp4" muted playsinline preload="metadata"></video>
+        <div class="info">
+          <h3>Nossas comilanças</h3>
+          <p>Esse dia foi bom</p>
+          <button class="assistir" onclick="abrirVideo(event,this)">Assistir</button>
+        </div>
+      </div>
+
+      <div class="card active" onclick="trocarCard(this)">
+        <video src="videos/boiadeiro.mp4" muted playsinline preload="metadata"></video>
+        <div class="info">
+          <h3>Um dia no campo</h3>
+          <p>Nem lembro o motivo da gravação</p>
+          <button class="assistir" onclick="abrirVideo(event,this)">Assistir</button>
+        </div>
+      </div>
+
+
+      <div class="card" onclick="trocarCard(this)">
+        <video src="videos/balanco.mp4" muted playsinline preload="metadata"></video>
+        <div class="info">
+          <h3>No parquinho</h3>
+          <p>A gente parecia criança</p>
+          <button class="assistir" onclick="abrirVideo(event,this)">Assistir</button>
+        </div>
+      </div>
+
+
+      <div class="card" onclick="trocarCard(this)">
+        <video src="videos/cinema.mp4" muted playsinline preload="metadata"></video>
+        <div class="info">
+          <h3>Cineminha</h3>
+          <p>Era pra ser apenas uma foto</p>
+          <button class="assistir" onclick="abrirVideo(event,this)">Assistir</button>
+        </div>
+      </div>
+
+
+      <div class="card" onclick="trocarCard(this)">
+        <video src="videos/dirigindo.mp4" muted playsinline preload="metadata"></video>
+        <div class="info">
+          <h3>Aprendendo a dirigir</h3>
+          <p>Deu menos errado do que eu imaginava</p>
+          <button class="assistir" onclick="abrirVideo(event,this)">Assistir</button>
+        </div>
+      </div>
+
+
+      <div class="card" onclick="trocarCard(this)">
+        <video src="videos/kanpai.mp4" muted playsinline preload="metadata"></video>
+        <div class="info">
+          <h3>Kanpaii!!</h3>
+          <p>Degustando bebida ruim</p>
+
+          <button class="assistir" onclick="abrirVideo(event,this)">Assistir</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="transicao2">
+    <p>Outros ficaram gravados em movimento…</p>
+  </div>
+
+  <section class="cena-carta">
+
+    <div class="lado-esquerdo">
+
+      <div class="video-card" onclick="abrirModal2('videos/piquenique2.mp4')">
+        <img src="imagens/piquenique1.jpeg" alt="Capa do vídeo">
+        <div class="play-btn">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="filme-bottom"></div>
+      </div>
+
+      <p class="typewriter" id="frase-esq-1"></p>
+
+      <div class="video-card-esconder" onclick="abrirModal2('videos/gravacao2.mp4')">
+        <video src="videos/gravacao2.mp4" muted playsinline preload="metadata"></video>
+        <div class="play-btn">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="envelope" onclick="abrirCarta(this)">
+
+      <div class="corpo-envelope">
+        ❤️ Para você
+      </div>
+
+      <div class="flap"></div>
+
+      <div class="carta-interna">
+        <div class="carta">
+          <p>"Se o amor fosse uma rima, você seria</p>
+          <p>a perfeição, pois em cada verso teu,</p>
+          <p>encontro o pulsar do meu coração."</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="lado-direito">
+
+      <div class="video-card-esconder" onclick="abrirModal2('videos/gravacao2.mp4')">
+        <video src="videos/gravacao2.mp4" muted playsinline preload="none"></video>
+        <div class="play-btn">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </div>
+
+      <p class="typewriter" id="frase-dir-1"></p>
+
+      <div class="video-card" onclick="abrirModal2('videos/teamo.mp4')">
+        <img src="imagens/teamo1.jpeg" alt="Capa do vídeo">
+        <div class="play-btn">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="filme-bottom"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="transicao">
+    <p>alguns momentos não vão embora.</p>
+  </div>
+
+  <section class="sessao-musica">
+
+    <div class="container">
+      <div class="frase-musica">
+        <h3>Uma música que me faz pensar em você... 🤍</h3>
+      </div>
+      <div class="vinil">
+        <img src="imagens/vinil.png" alt="">
+      </div>
+      <div class="player-musica">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WRxwtV_x8nM?si=f4X2IYnRDtyw-JMt"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="transicao">
+    <p>eles ficam de outro jeito.</p>
+  </div>
+
+  <section class="sessao-filme">
+
+    <div class="container2">
+      <p class="tag-filme">🎞 Em cartaz</p>
+      <h2 class="titulo-filme">O caminho até aqui</h2>
+      <p class="sub-filme">In your eyes i see my future.</p>
+    </div>
+
+    <div class="layout-filme">
+
+      <div class="cinema-frame" onclick="abrirModal2('videos/historia.mp4')">
+        <div class="filme-top"></div>
+        <img src="imagens/nos.png">
+        <div class="play-overlay">
+          <div class="play-btn-cinema">▶</div>
+          <p>Assistir</p>
+        </div>
+        <div class="filme-bottom"></div>
+      </div>
+
+      <div class="poster-filme">
+        <span class="poster-badge">1 ano de namoro</span>
+        <h3>Entre Nós</h3>
+        <p class="genero">🎬 Romance / Memória</p>
+        <p class="duracao">⏳ Duração: 3 min</p>
+        <div class="stars">★★★★★</div>
+        <p class="sinopse">Um acontecimento imprevisível, que se tornou um amor incondicional.</p>
+      </div>
+
+    </div>
+
+    <p class="creditos">🤍</p>
+
+  </section>
+
+  <div class="transicao">
+    <p>e incrivelmente, sempre me levam até você.</p>
+  </div>
+
+  <section class="sessao-final">
+
+    <div class="final-conteudo">
+      <img src="imagens/euevc.jpeg" alt="Eu e você" class="img-final">
+      <p class="frase-final">
+        Para finalizar quero dizer que tudo ainda é <br>
+        pouco para o que você me proporciona, eu te amo.
+      </p>
+      <button class="btn-replay" onclick="voltarInicio()">
+        <span>🤍</span> Replay
+      </button>
+    </div>
+
+  </section>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <video id="videoPlayer" controls></video>
+      <span class="fechar" onclick="fecharModal()">✕</span>
+    </div>
+  </div>
+
+  <div id="videoModal2" class="modal">
+    <div class="modal-content">
+      <video id="videoPlayer2" controls></video>
+      <span class="fechar" onclick="fecharModal2()">✕</span>
+    </div>
+  </div>
+
+  <footer>✦ FEITO COM AMOR ✦</footer>
+
+  <audio id="musica" loop>
+    <source src="musicas/art-class.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="main.js" defer></script>
+
+</body>
+
+</html>
