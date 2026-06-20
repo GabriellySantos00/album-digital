@@ -23,4 +23,4 @@ Este projeto foi criado para explorar a criação de experiências digitais mais
 
 ## Acesse o projeto
 
-🔗[ /memorias-digitais.netlify.app/](https://memorias-digitais.netlify.app)
+🔗[ /memorias-digitais.vercel.app/](https://memorias-digitais.vercel.app/)
